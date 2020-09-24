@@ -5,15 +5,9 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: 'Block'
+  - name: 'Block #1'
     task:
-      secrets:
-        - name: 'Test secret'
       jobs:
         - name: 'Job #1'
           commands:
-            - ls -la
             - checkout
-            - ls -la
-          
-            
